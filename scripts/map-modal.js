@@ -19,5 +19,8 @@ closeMap.addEventListener('click', () => {
 modal.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.classList.remove('active');
+
+    // 👇 reativa scroll
+    document.body.style.overflow = "";
   }
 });

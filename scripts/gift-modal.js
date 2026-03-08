@@ -32,5 +32,7 @@ closeGiftModal.addEventListener('click', () => {
 giftModal.addEventListener('click', (e) => {
     if (e.target === giftModal) {
         giftModal.classList.remove('active');
+        // 👇 reativa scroll
+        document.body.style.overflow = "";
     }
 });
