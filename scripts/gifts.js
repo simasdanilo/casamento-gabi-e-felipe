@@ -70,7 +70,7 @@ function renderGifts(containerId, gifts) {
         showToast("Não foi possível copiar o Pix");
       }
 
-      window.open(gift.link, "_blank", "noopener,noreferrer");
+      // window.open(gift.link, "_blank", "noopener,noreferrer");
     };
 
 
