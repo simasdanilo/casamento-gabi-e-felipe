@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="styles/index.css">
 
   <!-- Scripts -->
+  <script src="scripts/gift-modal.js" defer></script>
   <script src="scripts/gifts.js" defer></script>
   <script src="scripts/guests-of-honor.js" defer></script>
   <script src="scripts/map-modal.js" defer></script>
@@ -29,7 +30,7 @@
     </section>
 
     <section>
-      <p class="typography-text">Versão 0.111</p>
+      <p class="typography-text">Versão 0.112</p>
       <p class="typography-text">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
         has been the industry's standard dummy text ever ".</p>
     </section>
@@ -142,13 +143,9 @@
       </p>
 
       <div class="actions-container">
-
         <a href="https://wa.me/5575992521301" class="button-primary" target="_blank">
           Falar com a loja de Itaberaba
         </a>
-        <button class="button-primary">
-          Enviar pix
-        </button>
       </div>
     </section>
     <div class="section-separator">
@@ -161,6 +158,24 @@
       <h2 class="typography-title section-title">Lista de presentes</h2>
       <div class="gifts-list" id="gifts-list"></div>
     </section>
+
+    <div class="modal-overlay" id="gift-modal">
+      <div class="modal">
+        <button class="button-modal-close" id="button-close-gift">×</button>
+
+        <div class="gift-modal-content">
+
+          <img id="gift-modal-image" class="gift-modal-image" alt="">
+
+          <p id="gift-modal-description"></p>
+          <span id="gift-modal-value" class="gift-modal-value"></span>
+          <button class="button-primary" id="gift-modal-present">
+            Presentear
+          </button>
+
+        </div>
+      </div>
+    </div>
 
     <div class="section-separator">
       <img src="assets/illustrations/section-separator.svg" alt="section separator illustration"

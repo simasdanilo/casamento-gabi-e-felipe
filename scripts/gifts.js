@@ -59,18 +59,8 @@ function renderGifts(containerId, gifts) {
       </div>
     `;
 
-    item.onclick = async () => {
-      const copied = await copyToClipboard(gift.pix);
-
-      if (copied) {
-        showToast("✓ Pix copiado");
-      } else {
-        showToast("Não foi possível copiar o Pix");
-      }
-
-      setTimeout(() => {
-        window.open(gift.link, "_blank", "noopener,noreferrer");
-      }, 800);
+    item.onclick = () => {
+      openGiftModal(gift);
     };
 
 
