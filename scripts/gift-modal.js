@@ -2,6 +2,14 @@ const giftModal = document.getElementById('gift-modal');
 const closeGiftModal = document.getElementById('button-close-gift');
 const presentButton = document.getElementById('gift-modal-present');
 
+function lockScroll() {
+    document.body.style.overflow = "hidden";
+}
+
+function unlockScroll() {
+    document.body.style.overflow = "";
+}
+
 function openGiftModal(gift) {
 
     document.getElementById('gift-modal-image').src = gift.photo;
@@ -17,22 +25,17 @@ function openGiftModal(gift) {
     showToast("✓ Pix copiado");
 
     giftModal.classList.add('active');
-
-
-    // 👇 impede scroll da página atrás do modal
-    document.body.style.overflow = "hidden";
+    lockScroll();
 }
 
 closeGiftModal.addEventListener('click', () => {
     giftModal.classList.remove('active');
-    // 👇 reativa scroll
-    document.body.style.overflow = "";
+    unlockScroll();
 });
 
 giftModal.addEventListener('click', (e) => {
     if (e.target === giftModal) {
         giftModal.classList.remove('active');
-        // 👇 reativa scroll
-        document.body.style.overflow = "";
+        unlockScroll();
     }
 });
