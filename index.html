@@ -30,7 +30,8 @@
     </section>
 
     <section>
-      <p class="typography-text">Versão 0.16</p>
+      <h2 class="typography-title section-title">Gabriela e Felipe</h2>
+      <p class="typography-text">Versão 0.17</p> <!-- @TODO remover antes de subir o final -->
       <p class="typography-text">Este espaço foi criado para compartilhar com você um pouco da nossa história e todas as
         informações sobre um dos dias mais especiais de nossas vidas: o nosso casamento.</p>
       <p class="typography-text">Cada detalhe desta celebração está sendo preparado com muito carinho, e será uma
@@ -95,6 +96,13 @@
     <!-- Convidados de honra-->
     <section class="section-guests-of-honor">
       <h2 class="typography-title section-title">Convidados de honra</h2>
+
+      <!-- Pais -->
+      <div class="honor-group">
+        <h3 class="typography-subtitle honor-subtitle">Pais</h3>
+        <img src="assets/illustrations/subtitle-ornament.svg" alt="" class="honor-subtitle-ornament" />
+        <div class="honor-grid" id="parents"></div>
+      </div>
       <!-- Padrinhos -->
       <div class="honor-group">
         <h3 class="typography-subtitle honor-subtitle">Padrinhos</h3>
@@ -123,39 +131,7 @@
         <div class="honor-grid" id="officiant"></div>
       </div>
 
-      <!-- Pais -->
-      <div class="honor-group">
-        <h3 class="typography-subtitle honor-subtitle">Pais</h3>
-        <img src="assets/illustrations/subtitle-ornament.svg" alt="" class="honor-subtitle-ornament" />
-        <div class="honor-grid" id="parents"></div>
-      </div>
 
-    </section>
-
-    <div class="section-separator">
-      <img src="assets/illustrations/section-separator.svg" alt="section separator illustration"
-        class="section-separator-illustration" />
-    </div>
-
-    <!-- Cerimônia e recepção-->
-    <section>
-      <h2 class="typography-title section-title">Cerimônia e Recepção</h2>
-
-
-      <button class="button-primary" id="button-open-map">
-        Ver local no mapa
-      </button>
-
-      <div class="modal-overlay" id="map-modal">
-        <div class="modal">
-          <button class="button-modal-close" id="button-close-map">×</button>
-
-          <iframe
-            src="https://www.google.com/maps?q=Espaço+Aliança,+Av.+Beira+Mar+419,+Ribeira,+Salvador+Bahia&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
     </section>
 
     <div class="section-separator">
@@ -168,16 +144,12 @@
       <h2 class="typography-title section-title">Presentear</h2>
       <p class="typography-text">Você pode nos presentear de duas formas:
       </p>
+
+      <!-- Opção 1 -->
       <p class="typography-text">1 - Escolhendo um presente da nossa lista na Loja Botelho, localizada na Rua
         Ramiro Pimentel, 72 – Centro,
         em
         Itaberaba/BA. A lista estará disponível na loja a partir de abril.
-      </p>
-      <p class="typography-text">2 - Selecionando uma das opções da nossa lista de presentes logo abaixo (via PIX)
-
-      </p>
-      <p class="typography-text"> Criamos algumas opções divertidas para vocês escolherem, é só selecionar a sua
-        favorita.
       </p>
 
       <div class="actions-container">
@@ -185,6 +157,15 @@
           Falar com a loja de Itaberaba
         </a>
       </div>
+
+      <!-- Opção 2 -->
+      <p class="typography-text">2 - Selecionando uma das opções da nossa lista de presentes logo abaixo (via
+        PIX).<br /><br />
+        Criamos algumas opções divertidas para vocês escolherem, é só selecionar a sua
+        favorita.
+      </p>
+
+
     </section>
     <div class="section-separator">
       <img src="assets/illustrations/section-separator.svg" alt="section separator illustration"
@@ -194,7 +175,7 @@
     <!-- Lista de presentes-->
     <section>
       <h2 class="typography-title section-title">Lista de presentes</h2>
-      <p class="typography-text">Selecione uma opção de presente abaixo para acessar o PIX</p>
+      <p class="typography-text">Selecione uma opção de presente abaixo para acessar o PIX:</p>
       <div class="gifts-list" id="gifts-list"></div>
     </section>
 
@@ -221,12 +202,45 @@
         class="section-separator-illustration" />
     </div>
 
+    <!-- Cerimônia e recepção-->
+    <section>
+      <h2 class="typography-title section-title">Cerimônia e Recepção</h2>
+
+      <p class="typography-text">
+        - <strong>Local:</strong> Espaço Aliança<br>
+        Av. Beira Mar, 419 - 1º andar<br>
+        Ribeira, Salvador, Bahia.
+      </p>
+      <p class="typography-text">
+        <strong> - Dia/Horário:</strong> Domingo, às 16h30
+      </p>
+      <button class="button-primary" id="button-open-map">
+        Ver local no mapa
+      </button>
+
+      <div class="modal-overlay" id="map-modal">
+        <div class="modal">
+          <button class="button-modal-close" id="button-close-map">×</button>
+
+          <iframe
+            src="https://www.google.com/maps?q=Espaço+Aliança,+Av.+Beira+Mar+419,+Ribeira,+Salvador+Bahia&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-separator">
+      <img src="assets/illustrations/section-separator.svg" alt="section separator illustration"
+        class="section-separator-illustration" />
+    </div>
 
     <!-- Confirme sua presença-->
     <section>
       <h2 class="typography-title section-title">Confirme sua presença</h2>
-      <p class="typography-text">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-        has been the industry's standard dummy text ever ".</p>
+      <img src="assets/illustrations/save-the-date.svg" class="save-the-date-illustration" />
+      <p class="typography-text" id="text-save-the-date">save the date</p>
+      <p class="typography-text" id="text-wedding-date">13.09.2026</p>
       <a href="https://forms.gle/EqPWs6d1aPqU1dPn6" class="button-primary" target="_blank">
         Confirmar presença
       </a>

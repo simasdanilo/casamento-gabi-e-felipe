@@ -27,15 +27,15 @@ const groomsmen = [
   { name: 'Danilo', photo: 'assets/photos/guests-of-honor/Danilo.JPG' },
   { name: 'Franklin', photo: 'assets/photos/guests-of-honor/Franklin.JPG' },
   { name: 'Gabriel', photo: 'assets/photos/guests-of-honor/Gabriel.JPG' },
-  { name: 'Vinicius', photo: 'assets/photos/guests-of-honor/Vinicius.JPG' },
+  { name: 'Vinícius', photo: 'assets/photos/guests-of-honor/Vinicius.JPG' },
 ];
 
 const bridesmaids = [
-  { name: 'Ana Flavia', photo: 'assets/photos/guests-of-honor/Ana Flavia.JPG' },
+  { name: 'Ana Flávia', photo: 'assets/photos/guests-of-honor/Ana Flavia.JPG' },
   { name: 'Carine', photo: 'assets/photos/guests-of-honor/Carine.JPG' },
   { name: 'Daphne', photo: 'assets/photos/guests-of-honor/Daphne.JPG' },
   { name: 'Mayara', photo: 'assets/photos/guests-of-honor/Mayara.JPG' },
-  { name: 'Thaina', photo: 'assets/photos/guests-of-honor/Thaina.JPG' }
+  { name: 'Thainá', photo: 'assets/photos/guests-of-honor/Thaina.JPG' }
 ];
 
 const flowerGirls = [
