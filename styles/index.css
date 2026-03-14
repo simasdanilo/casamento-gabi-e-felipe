@@ -111,9 +111,10 @@ section {
   transform: translateX(-50%) translateY(0);
 }
 
-/* TESTE ----- */
+/* PHOTO DIVIDER -------------------------------------- */
 
-.photo-divider2 {
+
+.photo-main {
   width: 100%;
   height: 55vh;
   max-height: 600px;
@@ -121,7 +122,7 @@ section {
 }
 
 /* BACKGROUND (fade) */
-.photo-divider2.fade2 {
+.photo-main.fade {
   background-size: cover;
   background-position: center;
 
@@ -138,7 +139,8 @@ section {
       transparent 100%);
 }
 
-.photo-divider {
+
+.photo-footer {
   width: 100%;
   height: 45vh;
   max-height: 360px;
@@ -146,7 +148,31 @@ section {
 }
 
 /* BACKGROUND (fade) */
-.photo-divider.fade {
+.photo-footer.fade {
+  background-size: cover;
+  background-position: center;
+
+  -webkit-mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 15%,
+      black 85%,
+      transparent 100%);
+
+  mask-image: linear-gradient(to bottom,
+      transparent 0%,
+      black 10%,
+      black 85%,
+      transparent 100%);
+}
+
+.photo-divider-thin {
+  width: 100%;
+  height: 25vh;
+  max-height: 360px;
+  margin: 0;
+}
+
+.photo-divider-thin.fade {
   background-size: cover;
   background-position: center;
 
