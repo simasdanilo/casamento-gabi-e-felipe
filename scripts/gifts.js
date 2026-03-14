@@ -98,7 +98,7 @@ const custom_gifts = [{
 },
 {
   description: 'Fundo emergencial para a comida Japonesa',
-  photo: 'assets/photos/gifts/gift500.jpg',
+  photo: 'assets/photos/gifts/gift500.png',
   value: 500,
   link: 'https://nubank.com.br/cobrar/25wta/69ac8682-908e-45bc-9f7e-6e5584dff7b4',
   pix: '00020126920014BR.GOV.BCB.PIX0136ba0aa1e2-96a0-4e0b-bf8c-48ddcd5401ed0230Fundo Emergencial para o Japa!5204000053039865406500.005802BR5925Felipe Lima da Fonseca Ne6009SAO PAULO62140510pdyzq2opS16304EA66'
