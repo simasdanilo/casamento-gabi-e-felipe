@@ -79,7 +79,9 @@ section {
 }
 
 .save-the-date-illustration {
-  margin-top: 20px;
+  display: inline-flex;
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
 }
 
 /* TESTE ----- */
