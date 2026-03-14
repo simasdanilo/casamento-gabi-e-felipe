@@ -83,7 +83,7 @@ section {
 
 #toast {
   position: fixed;
-  bottom: 24px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%) translateY(20px);
 
@@ -98,6 +98,7 @@ section {
 
   transition: opacity 0.25s ease, transform 0.25s ease;
   pointer-events: none;
+  z-index: 200;
 }
 
 #toast.show {
