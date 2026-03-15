@@ -5,10 +5,18 @@
   margin-top: var(--space-5);
 }
 
+
+.honor-group-header {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
 .honor-subtitle {
   line-height: 1;
   margin: 0;
-
+  margin-left: var(--space-5);
+  margin-right: var(--space-5);
 }
 
 
